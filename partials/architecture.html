@@ -1,0 +1,25 @@
+<section id="architecture">
+    <h2>Model Architecture</h2>
+    <p>
+        The core architecture of our GAN-based model for abstractive text summarization is composed of two 
+        neural networks: the generator and the discriminator. The generator is responsible for producing 
+        a summary based on the input text, while the discriminator evaluates how close the generated summary 
+        is to the actual, human-generated summary.
+    </p>
+    <p>
+        - <strong>Generator:</strong> This is a sequence-to-sequence model, enhanced with attention mechanisms, 
+        that generates a summary of the input text. The generator tries to learn the key patterns and features 
+        that should be included in a summary, including linguistic fluency and coherence.
+    </p>
+    <p>
+        - <strong>Discriminator:</strong> This network, which can be a binary classifier, determines whether 
+        a summary is real (human-generated) or fake (machine-generated). The discriminator’s feedback helps 
+        the generator improve its summary generation in an adversarial setup.
+    </p>
+    <img src="images/gan_architecture.png" alt="GAN Architecture Diagram">
+    <p>
+        The adversarial setup allows the generator to gradually improve its summarization capability, as it 
+        learns from the feedback given by the discriminator. This leads to summaries that are more coherent, 
+        concise, and aligned with human understanding.
+    </p>
+</section>

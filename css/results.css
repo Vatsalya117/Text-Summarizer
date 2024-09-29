@@ -1,0 +1,23 @@
+/* Styles for the Results page */
+
+main {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #333;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
